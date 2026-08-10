@@ -1007,6 +1007,7 @@ async function renderVarian(main){
     <h2 class="section-title">Varian Minuman</h2>
     <p class="section-sub">Atur harga Reguler dan harga Night Market tiap varian. Harga ini dipakai untuk menghitung otomatis total pemasukan saat mencatat penjualan.</p>
 
+
     <div class="card" style="margin-bottom:22px; max-width:560px;">
       <form id="varForm">
         <div class="form-grid">
