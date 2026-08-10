@@ -1007,13 +1007,6 @@ async function renderVarian(main){
     <h2 class="section-title">Varian Minuman</h2>
     <p class="section-sub">Atur harga Reguler dan harga Night Market tiap varian. Harga ini dipakai untuk menghitung otomatis total pemasukan saat mencatat penjualan.</p>
 
-    <div class="gallery">
-      <div class="gallery-item"><img src="image/es-teh.jpg" alt="Iced Tea Exoteast"><div class="cap">🍊 Iced Tea</div></div>
-      <div class="gallery-item"><img src="image/es-kopi.jpg" alt="Iced Coffee Exoteast"><div class="cap">☕ Iced Coffee</div></div>
-      <div class="gallery-item"><img src="image/es-matcha.jpg" alt="Iced Matcha Exoteast"><div class="cap">🍵 Iced Matcha</div></div>
-      <div class="gallery-item"><img src="image/es-stroberi.jpg" alt="Iced Strawberry Milk Exoteast"><div class="cap">🍓 Iced Strawberry Milk</div></div>
-    </div>
-
     <div class="card" style="margin-bottom:22px; max-width:560px;">
       <form id="varForm">
         <div class="form-grid">
