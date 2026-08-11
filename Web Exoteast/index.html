@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exoteast — Management</title>
+<meta name="description" content="Aplikasi manajemen internal untuk bisnis minuman keliling Exoteast: pemasukan harian, pengeluaran, inventori, gaji karyawan, dan laporan bulanan.">
+<link rel="icon" type="image/png" href="image/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+<body>
+
+<!-- ==================== LOGIN SCREEN ==================== -->
+<div class="login-screen" id="loginScreen">
+  <div class="login-card">
+    <div class="login-logo"><img src="image/logo.png" alt="Exoteast"></div>
+    <h1>Selamat Datang Kembali!</h1>
+    <p class="login-sub">Sistem Manajemen Bisnis Exoteast</p>
+    <form id="loginForm">
+      <div class="field">
+        <label>Username</label>
+        <input type="text" id="loginUsername" autocomplete="username" required>
+      </div>
+      <div class="field">
+        <label>Password</label>
+        <input type="password" id="loginPassword" autocomplete="current-password" required>
+      </div>
+      <div class="login-error" id="loginError"></div>
+      <button class="btn btn-primary" type="submit" style="width:100%; justify-content:center;">🔓 Masuk</button>
+    </form>
+    <div class="login-hint">
+     <div class="login-hint-title">Masuk sebagai : </div>
+      <div class="login-hint-row"><span class="badge badge-reg">Admin</span> <span class="mono"></span> — mengelola &amp; mengedit semua data</div>
+      <div class="login-hint-row"><span class="badge" style="background:var(--yellow); color:var(--ink);">Viewer</span> <span class="mono"></span> — lihat dashboard &amp; laporan saja</div>
+      <div class="login-hint-note">Segera ganti password lewat menu "Kelola Akun" setelah masuk sebagai Admin.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== APP SHELL ==================== -->
+<div class="app-shell" id="app" style="display:none;">
+  <aside class="sidebar">
+    <div class="logo"><img src="image/logo.png" alt="Exoteast"></div>
+    <nav class="nav-list" id="navList"></nav>
+    <div class="sidebar-foot" id="sidebarFoot"></div>
+  </aside>
+  <div class="content-wrap">
+    <header class="topbar">
+      <input class="biz-name" id="bizNameInput" value="Exoteast" spellcheck="false">
+      <div class="topbar-right">
+        <div class="topbar-date" id="topbarDate"></div>
+        <div class="topbar-user" id="topbarUser"></div>
+      </div>
+    </header>
+    <main class="main-content" id="main"></main>
+  </div>
+</div>
+<div id="toast"></div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
